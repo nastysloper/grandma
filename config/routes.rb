@@ -1,6 +1,6 @@
 LearningRails::Application.routes.draw do
   get '/' => 'pages#index'
-  match '/show_mama' => 'pages#show'
+  match '/show_yo_mama' => 'pages#show'
   # this was the error: trying to post to grandma for some weird reason? 
   # Why was I trying to do that?
   # post '/grandma' => 'pages#index'

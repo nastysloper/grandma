@@ -1,10 +1,9 @@
 <h1>Pages Show</h1>
-<%= @grandma %>
+<p><%= @grandma %></p>
 
-
-  <%= form_tag({controller: "pages", action: "show"}, method: "get") do %>
-    <%= label_tag(:user_input, "Say something to Grandma:") %>
-    <br>
-    <%= text_field_tag(:user_input) %>
-    <%= submit_tag("Say it!") %>
-  <% end %>
+<%= form_tag({controller: "pages", action: "show"}, method: "get") do %>
+  <%= label_tag(:user_input, "Say something to Grandma:") %>
+  <br>
+  <%= text_field_tag(:user_input) %>
+  <%= submit_tag("Say it!") %>
+<% end %>

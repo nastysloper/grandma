@@ -11,6 +11,7 @@ class PagesController < ApplicationController
       render :index
     else
       @grandma = "SPEAK UP, SONNY!"
+      render :index
     end
   end
 end
