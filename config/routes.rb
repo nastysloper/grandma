@@ -1,7 +1,7 @@
 LearningRails::Application.routes.draw do
   get '/' => 'pages#index'
 
-  post '/grandma' => 'pages#response'
+  post '/grandma' => 'pages#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

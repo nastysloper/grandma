@@ -5,10 +5,8 @@
 <% end %>
 
   <%= form_tag("/response", method: "post") do %>
-    <%= label_tag(:user_input, "Say something to Grandma:" ) %>
-    <br>
-    <%= text_field=(:user_input) %>
-    <%= submit_tag=("Say it!") %>
+    <%= label_tag(:user_input, "Say something to Grandma:") %>
+    <%= text_field_tag(:user_input) %>
+    <%= submit_tag("Say it!") %>
   <% end %>
-  </form>
 </div>
