@@ -1,7 +1,12 @@
 LearningRails::Application.routes.draw do
   get '/' => 'pages#index'
+  match '/show_mama' => 'pages#show'
+  # this was the error: trying to post to grandma for some weird reason? 
+  # Why was I trying to do that?
+  # post '/grandma' => 'pages#index'
 
-  post '/grandma' => 'pages#index'
+  # post '/response' => 'pages#response'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

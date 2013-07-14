@@ -1,8 +1,6 @@
-<div class="container">
-<h1>Deaf Grandma</h1>
-<% if @grandma %>
-  <p>Grandma says: "<span id="grandma_says"><%= @grandma %></span>"</p>
-<% end %>
+<h1>Pages Show</h1>
+<%= @grandma %>
+
 
   <%= form_tag({controller: "pages", action: "show"}, method: "get") do %>
     <%= label_tag(:user_input, "Say something to Grandma:") %>
@@ -10,4 +8,3 @@
     <%= text_field_tag(:user_input) %>
     <%= submit_tag("Say it!") %>
   <% end %>
-</div>
